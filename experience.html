@@ -1,0 +1,16 @@
+<div class="job">
+	<p>
+	<strong>{{job.title}}</strong>
+	      <small style="color:#999">{{job.companyName}}</small>
+	<br>
+	<span class="text-muted">
+	    <small>{{job.startDate}} - {{job.endDate}}</small>
+	</span>
+	 </p>
+	<p class="job-desc" >
+    <li  ng-repeat="line in job.experience">
+      {{line}}
+    </li>
+		
+	</p>
+</div>
