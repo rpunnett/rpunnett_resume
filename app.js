@@ -113,15 +113,13 @@
   ];
 
 
+
 })();
 
-app.directive('widgetForm', function() {
+app.directive('externalLink', function() {
   return {
-    restrict: 'E',
-    link: function(scope, elem, attrs) {
-      var a = elem[0];
-      if (a.hostname != location.host)
-         a.target = '_blank';
+    compile: function(element) {
+      element.attr('target', '_blank');
     }
-  }
-}
+  };
+});

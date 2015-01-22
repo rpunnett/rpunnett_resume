@@ -1,19 +1,17 @@
 body {
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding-top: 10px; }
 
-.me {
+.title {
   margin-bottom: 10px;
   margin-top: 15px; }
-
-.mattia {
-  margin-top: 30px;
-  font-size: 3em;
-  font-weight: 700;
-  line-height: 22px; }
-
-.titolo {
-  font-size: 1.5em; }
+  .title .name {
+    margin-top: 30px;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 22px; }
+  .title .location {
+    font-size: 1.5em; }
 
 #availability, #contact, #lang, #projects, #skills {
   padding-bottom: 30px; }
@@ -143,4 +141,4 @@ For 769px Width
   .no-print {
     display: none; } }
 
-/*# sourceMappingURL=custom.css.map */
+/*# sourceMappingURL=base.css.map */

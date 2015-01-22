@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description=" content="Robert Punnett's Resume - Atlanta, GA">
 
-   	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans'  type='text/css'>
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans'  type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" type='text/css'>
     <link rel="stylesheet" href="css/custom.min.css"  type='text/css'>
-   	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type='text/css'>
   </head>
   <!-- Adapted From: https://github.com/mtt87/Resume -->
  <body class="list-group" ng-controller="ResumeController as resume">
@@ -17,9 +17,9 @@
         <div class="row">
             <div class="col-md-3 right-side">
                 <div id="contact">
-                    <div class="me">
-                        <p class="mattia">{{resume.name}}</p>
-                        <span class="titolo text-muted">
+                    <div class="title">
+                        <p class="name">{{resume.name}}</p>
+                        <span class="location text-muted">
                         </span>
                     </div>
                     <a class="btn btn-primary btn-xs no-print" href="" download>
@@ -33,10 +33,10 @@
 
                             </div>
                             <div class="col-sm-6 col-md-12 col-lg-12">
-                                <div id="links" ng-include="'views/links.html'" widget-form>
+                                <div id="links" ng-include="'views/links.html'">
 
                           
-                                </div>	
+                                </div>  
                             </div>
                         </div>
 
@@ -62,9 +62,9 @@
                 </h4>
 
                 <div class="" ng-repeat="job in resume.jobs" ng-include="'views/experience.html'">
-					<!-- Repeat Job Experience -->
-			    </div>
-			
+                    <!-- Repeat Job Experience -->
+                </div>
+            
 
                 <h4 class="cat">
                     <span class="glyphicon glyphicon-book"></span>
@@ -72,8 +72,8 @@
                 </h4>
 
                 <div class="" ng-repeat="school in resume.education" ng-include="'views/education.html'">
-					<!-- Repeat Schools -->
-			    </div>
+                    <!-- Repeat Schools -->
+                </div>
                 <!-- <div class="spazio2"></div> -->
                 <h4 class="cat">
                     <span class="glyphicon glyphicon-user"></span>
@@ -89,5 +89,5 @@
 
   </body>
 </html>
-   	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
