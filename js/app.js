@@ -7,7 +7,7 @@
     this.projects = githubProjects;
     this.name = "Robert Punnett";
     this.title = "Robert Punnett Resume";
-
+  
     this.contact = [{
       email: 'RobertPunnett@outlook.com',
       linkedin: "https://www.linkedin.com/in/punnettr",
@@ -111,7 +111,7 @@
   }, {
     title: 'basic_linux_kernel',
     description: "A small linux kernel that prints a string to console.",
-    technology: ["Assembly","C"],
+    technology: ["Assembly","C","Shell"],
     url: "https://github.com/rpunnett/basic_linux_kernel",
   }];
 

@@ -9,25 +9,32 @@ body {
 }
 
 .name{
-    margin-top: 30px;
+    margin-top: 20px; 
     font-size: 3em;
     font-weight: 700;
-    line-height: 22px;
+    line-height: 40px;
 }
 
-.titolo {
+.location {
     font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.expLine {
+font-size: .7em !important;
+
+margin-top: 4px;
 }
 
 #availability,#contact,#lang,#projects,#skills {
     padding-bottom: 30px;
 }
 
-#address {
-    padding-bottom: 5px;
-    padding-top: 20px;
-}
 
+#contact {
+    margin-top: 30px;
+}
 .job {
     padding-bottom: 20px;
     padding-top: 10px;

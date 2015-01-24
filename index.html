@@ -16,17 +16,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 right-side">
-                <div id="contact">
+                <div id="personal">
                     <div class="title">
                         <p class="name">{{resume.name}}</p>
-                        <span class="location text-muted">
-                        </span>
+                        <div class="location text-muted">
+                            Atlanta, GA
+                        </div>
                     </div>
-                    <a class="btn btn-primary btn-xs no-print" href="" download>
+                    <a class="btn btn-primary btn-xs no-print" href="" download disabled>
                         <span class="fa fa-file-pdf-o"></span>&nbsp;Download PDF</a>
-                    <div id="address">
+                    <div id="contact">
                         <h4 class="cat-side">
                             <span class="fa fa-link"></span>
+                            <span class="pull-right">Contact</span>
                         </h4>
                         <div class="row">
                             <div class="col-sm-6 col-md-12 col-lg-12">
@@ -44,6 +46,7 @@
                
                     <h4 class="cat-side">
                      <span class="fa fa-github"></span>
+                      <span class="pull-right">GitHub</span>
                     </h4>
                     <div ng-repeat="project in resume.projects" ng-include="'views/projects.html'">
                         <!-- Import GithubObject Here-->
