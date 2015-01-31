@@ -5,8 +5,6 @@
     this.jobs = experience;
     this.education = schools;
     this.github = github;
-    this.name = "Robert Punnett";
-    this.title = "Robert Punnett Resume";
   
     this.contact = [{
       email: 'RobertPunnett@outlook.com',
@@ -19,7 +17,38 @@
   });
 
 
-  var experience = [{
+  app.directive("workExperience", function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/experience.html",
+    };
+  });
+
+  app.directive("githubProject", function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/github.html",
+    };
+  });
+
+
+  app.directive("educationExperience", function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/education.html",
+    };
+  });
+
+  app.directive("contactLink", function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/links.html",
+    };
+  });
+
+
+  var experience = [
+  {
     companyName: 'Norfolk Southern',
     title: "PC/LAN Administrator",
     startDate: "March 2013",
@@ -124,6 +153,8 @@ app.directive('href', function() {
   };
 });
 */
+
+
 
 
 

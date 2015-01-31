@@ -68,7 +68,8 @@
 
 </div>
 
-                                <div id="links" ng-include="'views/links.html'">
+                                <div id="links">
+                                    <contact-link></contact-link>
                                 </div>  
                             </div>
                         </div>
@@ -79,8 +80,8 @@
                      <span class="fa fa-github"></span>
                       <span class="pull-right">GitHub</span>
                     </h4>
-                    <div ng-repeat="github in resume.github" ng-include="'views/github.html'">
-                        <!-- Import GithubObject Here-->
+                    <div ng-repeat="github in resume.github" >
+                        <github-project></github-project>
                     </div>
                 </div><!-- /#projects -->
                <div ng-include="'views/skills.html'">
@@ -91,15 +92,17 @@
                   <span class="glyphicon glyphicon-briefcase"></span> 
                     <span class="pull-right">Experience</span>
                 </h4>
-                <div class="" ng-repeat="job in resume.jobs" ng-include="'views/experience.html'">
-                    <!-- Repeat Job Experience -->
+
+                <div class="" ng-repeat="job in resume.jobs">
+                    <work-experience></work-experience>
                 </div>
+
                 <h4 class="catagory">
                     <span class="glyphicon glyphicon-book"></span>
                     <span class="pull-right">Education</span>
                 </h4>
-                <div class="" ng-repeat="school in resume.education" ng-include="'views/education.html'">
-                    <!-- Repeat Schools -->
+                <div class="" ng-repeat="school in resume.education" >
+                    <education-experience></education-experience>
                 </div>
                 <h4 class="catagory">
                     <span class="glyphicon glyphicon-user"></span>
@@ -119,14 +122,7 @@
     <script src="js/magnific/magnific.js" type="text/javascript"></script>
 
     <script>
-    /*
-    $(document).ready(function() {
-    $(".fancybox").fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none',
-        autoCenter: 'true'
-    });
-}); */
+
 
 $('.parent-container').magnificPopup({
   delegate: 'a', // child items selector, by clicking on it popup will open
