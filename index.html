@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html ng-app="resume"  >
+<html ng-app="resume">
   <head>
+
     <meta charset='utf-8'>
     <title>Robert Punnett Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,10 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" type='text/css'>
     <link rel="stylesheet" href="css/custom.min.css"  type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type='text/css'>
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+
+  <link rel="stylesheet" href="css/magnific/magnific.css"  type='text/css'>
+
   </head>
   <!-- Adapted From: https://github.com/mtt87/Resume -->
  <body class="list-group" ng-controller="ResumeController as resume">
@@ -17,83 +22,117 @@
         <div class="row">
             <div class="col-md-3 right-side">
                 <div id="personal">
-                    <div class="title">
-                        <p class="name">{{resume.name}}</p>
-                        <div class="location text-muted">
-                            Atlanta, GA
+                    <div class="title" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <p class="name" itemprop="name">Robert Punnett</p>
+                        <span hidden itemprop="role">Developer</span>
+                        <div class="location text-muted" itemprop="address" itemscope
+                            itemtype="http://data-vocabulary.org/Address">
+                            <span itemprop="locality">Atlanta</span>, <span itemprop="region">GA</span>
                         </div>
                     </div>
                     <a class="btn btn-primary btn-xs no-print" href="" download disabled>
-                        <span class="fa fa-file-pdf-o"></span>&nbsp;Download PDF</a>
+                        <span class="fa fa-file-pdf-o"></span> Download PDF
+                    </a>
                     <div id="contact">
-                        <h4 class="cat-side">
+                        <h4 class="catagory-side">
                             <span class="fa fa-link"></span>
                             <span class="pull-right">Contact</span>
                         </h4>
                         <div class="row">
                             <div class="col-sm-6 col-md-12 col-lg-12">
+<div class='parent-container'>
+                            <a class="fancybox" fancybox rel="gallery1" href="https://i.imgur.com/BbuHQY7.png" title="Login Screen">
+    Dat Gallery
+</a>
+<a class="fancybox" rel="gallery1" href="https://i.imgur.com/jbdFRnY.png" title="Landing Page" hidden>
+
+</a>
+<a class="fancybox" rel="gallery1" href="https://i.imgur.com/fLuywLo.png" title="Add asset, with validation" hidden>
+    
+</a>
+<a class="fancybox" rel="gallery1" href="https://i.imgur.com/iqthdIk.png" title="Asset list using DataTables" hidden>
+
+</a>
+<a class="fancybox" rel="gallery1" href="https://i.imgur.com/QGGtMsI.png" title="Asset details, control panel, info panels" hidden>
+
+</a>
+<a class="fancybox" rel="gallery1" href="https://i.imgur.com/AsR4A2v.png" title="Location panels using Google Maps API" hidden>
+
+</a>
+<a class="fancybox" rel="gallery1" href="https://i.imgur.com/DHwMkeD.png" title="Location details" hidden>
+
+</a>
+<a class="fancybox" rel="gallery1" href="https://i.imgur.com/aRB5Ca1.png" title="User management" hidden>
+
+</a>
+
+</div>
+
                                 <div id="links" ng-include="'views/links.html'">
                                 </div>  
                             </div>
                         </div>
-
                     </div>
-
-                </div>
-                <!-- /#contact -->
-
+                </div> <!-- /#personal -->
                 <div id="projects">
-               
-                    <h4 class="cat-side">
+                    <h4 class="catagory-side">
                      <span class="fa fa-github"></span>
                       <span class="pull-right">GitHub</span>
                     </h4>
-                    <div ng-repeat="project in resume.projects" ng-include="'views/projects.html'">
+                    <div ng-repeat="github in resume.github" ng-include="'views/github.html'">
                         <!-- Import GithubObject Here-->
                     </div>
-                </div>
-
-             
+                </div><!-- /#projects -->
                <div ng-include="'views/skills.html'">
-
                </div>
-                
-            </div>
-            <!-- ./col-3 -->
-
+            </div><!-- ./col-3 -->
             <div class="col-md-9 left-side">
-                <h4 class="cat">
+                <h4 class="catagory">
                   <span class="glyphicon glyphicon-briefcase"></span> 
                     <span class="pull-right">Experience</span>
                 </h4>
-
                 <div class="" ng-repeat="job in resume.jobs" ng-include="'views/experience.html'">
                     <!-- Repeat Job Experience -->
                 </div>
-            
-
-                <h4 class="cat">
+                <h4 class="catagory">
                     <span class="glyphicon glyphicon-book"></span>
                     <span class="pull-right">Education</span>
                 </h4>
-
                 <div class="" ng-repeat="school in resume.education" ng-include="'views/education.html'">
                     <!-- Repeat Schools -->
                 </div>
-                <h4 class="cat">
+                <h4 class="catagory">
                     <span class="glyphicon glyphicon-user"></span>
-                    <span class="pull-right">About me</span>
+                    <span class="pull-right">Community Involvement</span>
                 </h4>
-                <p class="edu">Active volunteer in local Neighborhood Association, American Red Cross, Dean’s Honor List</p>
-
-            </div>
-            <!-- ./row -->
-        </div>
-        <!-- ./col-9 -->
-    </div>
-
+                <p class="edu">Active volunteer in <a href="http://www.centerpark.org">Center Park Neighborhood Association</a>. Historically serving as Secratary and Vice President.</p>
+            </div> <!-- ./col-9 -->
+        </div><!-- ./row -->
+    </div><!-- ./container -->
   </body>
 </html>
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="js/magnific/magnific.js" type="text/javascript"></script>
+
+    <script>
+    /*
+    $(document).ready(function() {
+    $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        autoCenter: 'true'
+    });
+}); */
+
+$('.parent-container').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image',
+  gallery:{enabled:true,
+   preload: [1,2],},
+  // other options
+});
+    </script>

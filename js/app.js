@@ -4,7 +4,7 @@
   app.controller('ResumeController', function() {
     this.jobs = experience;
     this.education = schools;
-    this.projects = githubProjects;
+    this.github = github;
     this.name = "Robert Punnett";
     this.title = "Robert Punnett Resume";
   
@@ -98,14 +98,14 @@
 
 
 
-  var githubProjects = [{
+  var github = [{
     title: 'rpunnett_resume',
     description: "This Resume, built using AngularJS and Sass",
     technology: ["JavaScript","CSS"],
     url: "https://github.com/rpunnett/rpunnett_resume",
   }, {
     title: 'extract_imgur',
-    description: " A small class to extract image links from imgur URLS in PHP",
+    description: " A lightweight class to extract image links from imgur URLS in PHP",
     technology: ["PHP"],
     url: "https://github.com/rpunnett/extract_imgur",
   }, {
@@ -115,6 +115,7 @@
     url: "https://github.com/rpunnett/basic_linux_kernel",
   }];
 
+/*
 app.directive('href', function() {
   return {
     compile: function(element) {
@@ -122,6 +123,9 @@ app.directive('href', function() {
     }
   };
 });
+*/
+
+
 
 })();
 
