@@ -154,22 +154,22 @@ var projects =  [
     images: [
       {
         src: "https://i.imgur.com/4nYaKDS.png",
-        title: "Login Screen",
+        title: "Landing Screen",
         
       },
       {
         src: "https://i.imgur.com/7dRtEX1.png",
-        title: "Landing Page, custom & standard reporting, overview tab",
+        title: "Landing Screen - with form validation",
         
       },
       {
-        src: "https://i.imgur.com/XW3mUhY.png",
-        title: "Creating a custom report",
+        src: "https://i.imgur.com/vToNip4.png",
+        title: "Search results",
         
       },
       {
         src: "https://i.imgur.com/o0QsE89.png",
-        title: "Report view, filterting and export",
+        title: "Settings page, custom colors and export",
         
       }
     ]
