@@ -5,8 +5,7 @@
     this.jobs = experience;
     this.education = schools;
     this.github = github;
-    this.name = "Robert Punnett";
-    this.title = "Robert Punnett Resume";
+    this.projects = projects;
   
     this.contact = [{
       email: 'RobertPunnett@outlook.com',
@@ -19,7 +18,168 @@
   });
 
 
-  var experience = [{
+  app.directive("workExperience", function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/experience.html",
+    };
+  });
+
+  app.directive("githubProject", function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/github.html",
+    };
+  });
+
+
+  app.directive("educationExperience", function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/education.html",
+    };
+  });
+
+  app.directive("contactLink", function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/links.html",
+    };
+  });
+
+  app.directive("project", function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/projects.html",
+    };
+  });
+
+
+
+var projects =  [
+  {
+    title: "Asset Inventory",
+    description: "A web portal to manage IT assets. Custom views, tables and forms across teams.",
+    technology: [
+      "PHP",
+      "jQuery",
+      "JavaScript",
+      "MySQL",
+      "SQL"
+    ],
+    images: [
+      {
+        src: "https://i.imgur.com/BbuHQY7.png",
+        title: "Login Screen",
+        
+      },
+      {
+        src: "https://i.imgur.com/jbdFRnY.png",
+        title: "Add asset, with validation",
+        
+      },
+      {
+        src: "https://i.imgur.com/iqthdIk.png",
+        title: "Asset list using DataTables",
+        
+      },
+      {
+        src: "https://i.imgur.com/QGGtMsI.png",
+        title: "Asset details, control panel, info panels",
+        
+      },
+      {
+        src: "https://i.imgur.com/AsR4A2v.png",
+        title: "Location panels using Google Maps API",
+        
+      },
+      {
+        src: "https://i.imgur.com/DHwMkeD.png",
+        title: "Location details",
+        
+      },
+      {
+        src: "https://i.imgur.com/aRB5Ca1.png",
+        title: "User management",
+        
+      }
+    ]
+  },
+  {
+    title: "Asset Reporting",
+    description: "A reporting centric web portal to provide data on the managed assets",
+    technology: [
+      "PHP",
+      "jQuery",
+      "JavaScript",
+      "MySQL",
+      "SQL"
+    ],
+    images: [
+      {
+        src: "https://i.imgur.com/0tfgf3b.png",
+        title: "Login Screen",
+        
+      },
+      {
+        src: "https://i.imgur.com/RMYpFXw.png",
+        title: "Landing Page, custom & standard reporting, overview tab",
+        
+      },
+      {
+        src: "https://i.imgur.com/watSnIn.png",
+        title: "Creating a custom report",
+        
+      },
+      {
+        src: "https://i.imgur.com/OasI3ND.png",
+        title: "Report view, filterting and export",
+        
+      },
+      {
+        src: "https://i.imgur.com/t5jBY8W.png",
+        title: "Managing custom reports",
+        
+      }
+    ]
+  },
+  {
+    title: "SCCM Search Utility",
+    description: "A reporting centric web portal to provide data on the managed assets",
+    technology: [
+      "C#",
+      "WPF",
+      "SQL"
+    ],
+    images: [
+      {
+        src: "https://i.imgur.com/4nYaKDS.png",
+        title: "Login Screen",
+        
+      },
+      {
+        src: "https://i.imgur.com/7dRtEX1.png",
+        title: "Landing Page, custom & standard reporting, overview tab",
+        
+      },
+      {
+        src: "https://i.imgur.com/XW3mUhY.png",
+        title: "Creating a custom report",
+        
+      },
+      {
+        src: "https://i.imgur.com/o0QsE89.png",
+        title: "Report view, filterting and export",
+        
+      }
+    ]
+  },
+];
+
+
+
+  var experience = [
+  {
     companyName: 'Norfolk Southern',
     title: "PC/LAN Administrator",
     startDate: "March 2013",
@@ -32,7 +192,7 @@
       "Designed, coded and deployed a asset management system using a web-based front-end and a PowerShell/C# back-end as a full stack developer",
       "Created a RESTful API to interface with the asset management system",
       "Researched and led a project for a department wide knowledge-base",
-      "Wrote a large repository of scripts using Batch, Visual Basic and PowerShell ",
+      "Wrote a large repository of scripts using Batch, Visual Basic and PowerShell",
       "Created internal documentation on software, hardware and processes on a team and department level"
     ]
   }, {
@@ -115,15 +275,43 @@
     url: "https://github.com/rpunnett/basic_linux_kernel",
   }];
 
-/*
-app.directive('href', function() {
+
+app.directive('newWindow', function() {
   return {
     compile: function(element) {
       element.attr('target', '_blank');
     }
   };
 });
-*/
+
+
+
+//console.log(projects);
+
+
+app.directive('fancyBox', function() {
+  return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        // In projects, if the title
+        // matches the selected project
+        // use the image set as the items for magnific
+        projects.forEach(function(project) {
+          if(project.title === attrs.projectTitle)
+          {
+            $(element).magnificPopup({
+                items: project.images,
+                gallery: {
+                 enabled:true,
+                    preload: [1,2],
+                },
+                type: 'image'
+            });
+          }
+        });
+      }
+  };
+});
 
 
 

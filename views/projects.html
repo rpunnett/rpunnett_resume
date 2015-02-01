@@ -1,7 +1,7 @@
 
     <p>
-        <a href="{{project.url}}">{{project.title}}</a><br>
-        <small class="subText" ng-repeat="tech in project.technology">{{tech}}{{$last ? '' : ', '}}</small>
+		<a href project-title={{project.title}} fancy-box  >{{project.title}}</a><br>
+		<small class="text-muted" ng-repeat="tech in project.technology">{{tech}}{{$last ? '' : ', '}}</small>
     </p>
     <p class="skill-list" >{{project.description}}
     </p>

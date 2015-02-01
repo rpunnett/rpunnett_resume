@@ -1,7 +1,7 @@
 
     <p>
-        <a href="{{project.url}}">{{github.title}}</a><br>
-        <small class="subText" ng-repeat="tech in project.technology">{{tech}}{{$last ? '' : ', '}}</small>
+        <a href="{{github.url}}" new-window>{{github.title}}</a><br>
+        <small class="text-muted" ng-repeat="tech in github.technology">{{tech}}{{$last ? '' : ', '}}</small>
     </p>
     <p class="skill-list" >{{github.description}}
     </p>
