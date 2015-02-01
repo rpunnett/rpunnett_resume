@@ -186,10 +186,10 @@ var projects =  [
     endDate: "Current",
     experience: [
       "Break/fix resolution and prevention, deployments, upgrades, malware resolution, network connectivity and general repair on PCs, Printers, and Mobile Devices ",
-      "Wrote a large repository of scripts using PowerShell, Batch and Visual Basic spanning silent installs and system management to a full restructure and automation of the Wake-on-LAN system",
+      "Wrote a large repository of scripts using PowerShell, Batch and Visual Basic spanning silent installs and system management to a full restructure and automation of our Wake-on-LAN system",
       "Created on demand utlitites and tools using C# and WPF ",
-      "Designed, programed and deployed an asset management system on RHEL6 using a PHP front-end and RESTful API pointed to a MySQL RDBMS as a full stack developer",
-      "Researched and led a project for a department wide knowledge base using MediaWiki and transitioning to SharePoint 2013",
+      "Designed, programmed and deployed an asset management system on RHEL6 using a PHP front-end and RESTful API pointed to a MySQL RDBMS as a full stack developer",
+      "Researched and led a project for a department wide knowledge base transition from MediaWiki to SharePoint 2013",
       "Created internal documentation on software, hardware and processes on a team and department level"
     ]
   }, {
