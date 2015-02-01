@@ -153,29 +153,28 @@ var projects =  [
     ],
     images: [
       {
-        src: "https://i.imgur.com/4nYaKDS.png",
+        src: "https://i.imgur.com/LF9OqNR.png",
         title: "Login Screen",
         
       },
       {
-        src: "https://i.imgur.com/7dRtEX1.png",
+        src: "https://i.imgur.com/ACPl3j9.png",
         title: "Landing Page, custom & standard reporting, overview tab",
         
       },
       {
-        src: "https://i.imgur.com/XW3mUhY.png",
+        src: "https://i.imgur.com/uFlptgK.png",
         title: "Creating a custom report",
         
       },
       {
-        src: "https://i.imgur.com/o0QsE89.png",
+        src: "https://i.imgur.com/gsZY2gB.png",
         title: "Report view, filterting and export",
         
       }
     ]
   },
 ];
-
 
 
   var experience = [
@@ -215,7 +214,7 @@ var projects =  [
       "Cultivated corporate client relationships by continually meeting and exceeding expectations",
       "Engineered initiatives that restructured technical support roles, training, hiring processes and client communication",
       "Wrote technical and support documentation on hardware, troubleshooting and process improvement",
-      "Researched and led a project to migrate DNS content filtering from an internal server to an external solution; reducing customer complaints by 90%",
+      "Researched and led a project to migrate DNS content filtering from an internal server to an external solution; increasing customer satisfaction by 90%",
     ]
   }, {
     companyName: 'Wandering WiFi',
@@ -280,10 +279,6 @@ app.directive('newWindow', function() {
     }
   };
 });
-
-
-
-//console.log(projects);
 
 
 app.directive('fancyBox', function() {
