@@ -5,6 +5,7 @@
     this.jobs = experience;
     this.education = schools;
     this.github = github;
+    this.projects = projects;
   
     this.contact = [{
       email: 'RobertPunnett@outlook.com',
@@ -46,6 +47,143 @@
     };
   });
 
+  app.directive("project", function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/projects.html",
+    };
+  });
+
+
+
+/* var projects = [
+{
+  title: "Asset Management System",
+  description: "A web portal to manage IT assets.",
+  technology:["PHP","jQuery","JavaScript","MySQL","SQL"],
+  images: [
+    "https://i.imgur.com/BbuHQY7.png",
+    "https://i.imgur.com/jbdFRnY.png",
+    "https://i.imgur.com/fLuywLo.png",
+    "https://i.imgur.com/iqthdIk.png",
+    "https://i.imgur.com/QGGtMsI.png",
+    "https://i.imgur.com/AsR4A2v.png",
+    "https://i.imgur.com/DHwMkeD.png",
+    "https://i.imgur.com/aRB5Ca1.png",
+  ],
+  imageDescriptions: [
+    "Login Screen",
+    "Landing Page",
+    "Add asset, with validation",
+    "Asset list using DataTables",
+    "Asset details, control panel, info panels",
+    "Location panels using Google Maps API",
+    "Location details",
+    "User management",
+  ]
+}];
+ */
+
+var projects =  [
+  {
+    title: "Asset Management System",
+    description: "A web portal to manage IT assets.",
+    technology: [
+      "PHP",
+      "jQuery",
+      "JavaScript",
+      "MySQL",
+      "SQL"
+    ],
+    images: [
+      {
+        src: "https://i.imgur.com/BbuHQY7.png",
+        title: "Login Screen",
+        
+      },
+      {
+        src: "https://i.imgur.com/jbdFRnY.png",
+        title: "Add asset, with validation",
+        
+      },
+      {
+        src: "https://i.imgur.com/iqthdIk.png",
+        title: "Asset list using DataTables",
+        
+      },
+      {
+        src: "https://i.imgur.com/QGGtMsI.png",
+        title: "Asset details, control panel, info panels",
+        
+      },
+      {
+        src: "https://i.imgur.com/AsR4A2v.png",
+        title: "Location panels using Google Maps API",
+        
+      },
+      {
+        src: "https://i.imgur.com/DHwMkeD.png",
+        title: "Location details",
+        
+      },
+      {
+        src: "https://i.imgur.com/aRB5Ca1.png",
+        title: "User management",
+        
+      }
+    ]
+  },
+  {
+    title: "Asset Management System",
+    description: "A web portal to manage IT assets.",
+    technology: [
+      "PHP",
+      "jQuery",
+      "JavaScript",
+      "MySQL",
+      "SQL"
+    ],
+    images: [
+      {
+        src: "https://i.imgur.com/BbuHQY7.png",
+        title: "Login Screen",
+        
+      },
+      {
+        src: "https://i.imgur.com/jbdFRnY.png",
+        title: "Add asset, with validation",
+        
+      },
+      {
+        src: "https://i.imgur.com/iqthdIk.png",
+        title: "Asset list using DataTables",
+        
+      },
+      {
+        src: "https://i.imgur.com/QGGtMsI.png",
+        title: "Asset details, control panel, info panels",
+        
+      },
+      {
+        src: "https://i.imgur.com/AsR4A2v.png",
+        title: "Location panels using Google Maps API",
+        
+      },
+      {
+        src: "https://i.imgur.com/DHwMkeD.png",
+        title: "Location details",
+        
+      },
+      {
+        src: "https://i.imgur.com/aRB5Ca1.png",
+        title: "User management",
+        
+      }
+    ]
+  },
+];
+
+
 
   var experience = [
   {
@@ -61,7 +199,7 @@
       "Designed, coded and deployed a asset management system using a web-based front-end and a PowerShell/C# back-end as a full stack developer",
       "Created a RESTful API to interface with the asset management system",
       "Researched and led a project for a department wide knowledge-base",
-      "Wrote a large repository of scripts using Batch, Visual Basic and PowerShell ",
+      "Wrote a large repository of scripts using Batch, Visual Basic and PowerShell",
       "Created internal documentation on software, hardware and processes on a team and department level"
     ]
   }, {
@@ -155,6 +293,32 @@ app.directive('href', function() {
 */
 
 
+//console.log(projects);
+
+
+app.directive('fancyBox', function() {
+  return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        // In projects, if the title
+        // matches the selected project
+        // use the image set as the items for magnific
+        projects.forEach(function(project) {
+          if(project.title === attrs.projectTitle)
+          {
+            $(element).magnificPopup({
+                items: project.images,
+                gallery: {
+                 enabled:true,
+                    preload: [1,2],
+                },
+                type: 'image'
+            });
+          }
+        });
+      }
+  };
+});
 
 
 
