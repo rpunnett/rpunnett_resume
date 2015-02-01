@@ -185,14 +185,11 @@ var projects =  [
     startDate: "March 2013",
     endDate: "Current",
     experience: [
-      "Break/fix resolution and prevention, software installs, single/mass deployments, software/hardware upgrades, virus/malware resolution, network connectivity and general repair on PCs, Printers, and Mobile Devices ",
-      "Image, configure, upgrade and deploy computers using Windows MDT and Ghost",
-      "Assisted in large scale roll out of Windows 7 with attention to detail in client requirements and satisfaction",
-      "Assist other teams or departments as needed in projects such as Wake-on-LAN management and GPO adjustments",
-      "Designed, coded and deployed a asset management system using a web-based front-end and a PowerShell/C# back-end as a full stack developer",
-      "Created a RESTful API to interface with the asset management system",
-      "Researched and led a project for a department wide knowledge-base",
-      "Wrote a large repository of scripts using Batch, Visual Basic and PowerShell",
+      "Break/fix resolution and prevention, deployments, upgrades, malware resolution, network connectivity and general repair on PCs, Printers, and Mobile Devices ",
+      "Wrote a large repository of scripts using PowerShell, Batch and Visual Basic spanning silent installs and system management to a full restructure and automation of the Wake-on-LAN system",
+      "Created on demand utlitites and tools using C# and WPF ",
+      "Designed, programed and deployed an asset management system on RHEL6 using a PHP front-end and RESTful API pointed to a MySQL RDBMS as a full stack developer",
+      "Researched and led a project for a department wide knowledge base using MediaWiki and transitioning to SharePoint 2013",
       "Created internal documentation on software, hardware and processes on a team and department level"
     ]
   }, {
