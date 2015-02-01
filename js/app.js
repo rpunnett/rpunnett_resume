@@ -56,38 +56,10 @@
 
 
 
-/* var projects = [
-{
-  title: "Asset Management System",
-  description: "A web portal to manage IT assets.",
-  technology:["PHP","jQuery","JavaScript","MySQL","SQL"],
-  images: [
-    "https://i.imgur.com/BbuHQY7.png",
-    "https://i.imgur.com/jbdFRnY.png",
-    "https://i.imgur.com/fLuywLo.png",
-    "https://i.imgur.com/iqthdIk.png",
-    "https://i.imgur.com/QGGtMsI.png",
-    "https://i.imgur.com/AsR4A2v.png",
-    "https://i.imgur.com/DHwMkeD.png",
-    "https://i.imgur.com/aRB5Ca1.png",
-  ],
-  imageDescriptions: [
-    "Login Screen",
-    "Landing Page",
-    "Add asset, with validation",
-    "Asset list using DataTables",
-    "Asset details, control panel, info panels",
-    "Location panels using Google Maps API",
-    "Location details",
-    "User management",
-  ]
-}];
- */
-
 var projects =  [
   {
-    title: "Asset Management System",
-    description: "A web portal to manage IT assets.",
+    title: "Asset Inventory",
+    description: "A web portal to manage IT assets. Custom views, tables and forms across teams.",
     technology: [
       "PHP",
       "jQuery",
@@ -134,8 +106,8 @@ var projects =  [
     ]
   },
   {
-    title: "Asset Management System",
-    description: "A web portal to manage IT assets.",
+    title: "Asset Reporting",
+    description: "A reporting centric web portal to provide data on the managed assets",
     technology: [
       "PHP",
       "jQuery",
@@ -145,38 +117,59 @@ var projects =  [
     ],
     images: [
       {
-        src: "https://i.imgur.com/BbuHQY7.png",
+        src: "https://i.imgur.com/0tfgf3b.png",
         title: "Login Screen",
         
       },
       {
-        src: "https://i.imgur.com/jbdFRnY.png",
-        title: "Add asset, with validation",
+        src: "https://i.imgur.com/RMYpFXw.png",
+        title: "Landing Page, custom & standard reporting, overview tab",
         
       },
       {
-        src: "https://i.imgur.com/iqthdIk.png",
-        title: "Asset list using DataTables",
+        src: "https://i.imgur.com/watSnIn.png",
+        title: "Creating a custom report",
         
       },
       {
-        src: "https://i.imgur.com/QGGtMsI.png",
-        title: "Asset details, control panel, info panels",
+        src: "https://i.imgur.com/OasI3ND.png",
+        title: "Report view, filterting and export",
         
       },
       {
-        src: "https://i.imgur.com/AsR4A2v.png",
-        title: "Location panels using Google Maps API",
+        src: "https://i.imgur.com/t5jBY8W.png",
+        title: "Managing custom reports",
+        
+      }
+    ]
+  },
+  {
+    title: "SCCM Search Utility",
+    description: "A reporting centric web portal to provide data on the managed assets",
+    technology: [
+      "C#",
+      "WPF",
+      "SQL"
+    ],
+    images: [
+      {
+        src: "https://i.imgur.com/4nYaKDS.png",
+        title: "Login Screen",
         
       },
       {
-        src: "https://i.imgur.com/DHwMkeD.png",
-        title: "Location details",
+        src: "https://i.imgur.com/7dRtEX1.png",
+        title: "Landing Page, custom & standard reporting, overview tab",
         
       },
       {
-        src: "https://i.imgur.com/aRB5Ca1.png",
-        title: "User management",
+        src: "https://i.imgur.com/XW3mUhY.png",
+        title: "Creating a custom report",
+        
+      },
+      {
+        src: "https://i.imgur.com/o0QsE89.png",
+        title: "Report view, filterting and export",
         
       }
     ]
@@ -282,15 +275,15 @@ var projects =  [
     url: "https://github.com/rpunnett/basic_linux_kernel",
   }];
 
-/*
-app.directive('href', function() {
+
+app.directive('newWindow', function() {
   return {
     compile: function(element) {
       element.attr('target', '_blank');
     }
   };
 });
-*/
+
 
 
 //console.log(projects);
