@@ -145,7 +145,7 @@ var projects =  [
   },
   {
     title: "SCCM Search Utility",
-    description: "A reporting centric web portal to provide data on the managed assets",
+    description: "A utility to easily search SCCM data on specific machines or persons.",
     technology: [
       "C#",
       "WPF",
