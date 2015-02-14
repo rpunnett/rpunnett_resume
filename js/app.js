@@ -263,7 +263,7 @@ var projects =  [
       },
       {
         src: "https://i.imgur.com/gsZY2gB.png",
-        title: "Report view, filterting and export",
+        title: "Custom Settings,
         
       }
     ]
