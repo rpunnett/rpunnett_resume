@@ -6,7 +6,7 @@
     this.education = schools;
     this.github = github;
     this.projects = projects;
-  
+    
     this.contact = [{
       email: 'RobertPunnett@outlook.com',
       linkedin: "https://www.linkedin.com/in/punnettr",
@@ -56,6 +56,100 @@
 
 
 
+
+  var experience = [
+  {
+    companyName: 'Norfolk Southern',
+    title: "PC/LAN Administrator",
+    startDate: "March 2013",
+    endDate: "Current",
+    experience: [
+      "Break/fix resolution and prevention, deployments, upgrades, malware resolution, network connectivity and general repair on PCs, Printers, and Mobile Devices ",
+      "Wrote a large repository of scripts using PowerShell, Batch and Visual Basic spanning silent installs and system management to a full restructure and automation of our Wake-on-LAN system",
+      "Created on demand utlitites and tools using C# and WPF ",
+      "Designed, programmed and deployed an asset management system on RHEL6 using a PHP front-end and RESTful API pointed to a MySQL RDBMS as a full stack developer",
+      "Researched and led a project for a department wide knowledge base transition from MediaWiki to SharePoint 2013",
+      "Created internal documentation on software, hardware and processes on a team and department level"
+    ]
+  }, {
+    companyName: 'Wandering WiFi',
+    title: "Telecommunications Manager",
+    startDate: "January 2012",
+    endDate: "March 2013",
+    experience: [
+      "Led team that procured and managed telecom accounts totaling $4 Million annually across DSL, Cable, T1, WISP, WiMAX and Cellular providers ",
+      "Created comprehensive process documentation ",
+      "Designed internal metrics and streamlined processes to eliminate lost income",
+      "Renegotiated contracts, saving 20% on average",
+    ]
+  }, {
+    companyName: 'Wandering WiFi',
+    title: "Technical Account Manager",
+    startDate: "September 2008",
+    endDate: "March 2013",
+    experience: [
+      "Managed and trained a rotating team of five to oversee 1,000+ locations with an annual revenue of $7 Million and a monthly user base of 540,000",
+      "Conducted three new client rollouts totaling $2.5 Million in capital over 600 locations that involved the installation of WLAN/LAN networks, marketing design and managing third party resources",
+      "Led a migration project for a Cisco T1 telecom solution at 220 locations ",
+      "Cultivated corporate client relationships by continually meeting and exceeding expectations",
+      "Engineered initiatives that restructured technical support roles, training, hiring processes and client communication",
+      "Wrote technical and support documentation on hardware, troubleshooting and process improvement",
+      "Researched and led a project to migrate DNS content filtering from an internal server to an external solution; increasing customer satisfaction by 90%",
+    ]
+  }, {
+    companyName: 'Wandering WiFi',
+    title: "Technical Support",
+    startDate: "March 2008",
+    endDate: "Septermber 2008",
+    experience: [
+      "Resolved customer issues by phone and email",
+      "Handled a daily average of 40 inbound support tickets",
+      "Performed remote and onsite break/fix operations",
+      "Installed WLAN/LAN networks for Hotels, Restaurants, Travel Centers",
+      "Consistently awarded for performance",
+    ]
+  }, {
+    companyName: 'Innovative Computers',
+    title: "IT Analyst",
+    startDate: "June 2006",
+    endDate: "January 2008",
+    experience: [
+      "Web development using PHP, JavaScript and HTML",
+      "Managed Windows Server infrastructure",
+      "Built, imaged and maintained desktops and laptops ",
+      "Consulted for local businesses with world-wide locations on user and server side technical support issues by phone, email, and on location ",
+      "Installed voice, data and security networks ",
+      "Initiated projects within the company for process improvement such as a ticket-based support system",
+    ]
+  }];
+
+
+ var schools = [{
+    name: 'Washtenaw Community College',
+    degree: "Applied Science",
+    startDate: 8,
+    endDate: 110.50,
+    status: "Transfer"
+  }];
+
+
+
+  var github = [{
+    title: 'rpunnett_resume',
+    description: "This Resume, built using AngularJS and Sass",
+    technology: ["JavaScript","CSS"],
+    url: "https://github.com/rpunnett/rpunnett_resume",
+  }, {
+    title: 'extract_imgur',
+    description: " A lightweight class to extract image links from imgur URLS in PHP",
+    technology: ["PHP"],
+    url: "https://github.com/rpunnett/extract_imgur",
+  }, {
+    title: 'basic_linux_kernel',
+    description: "A small linux kernel that prints a string to console.",
+    technology: ["Assembly","C","Shell"],
+    url: "https://github.com/rpunnett/basic_linux_kernel",
+  }];
 var projects =  [
   {
     title: "Asset Inventory",
@@ -154,17 +248,17 @@ var projects =  [
     images: [
       {
         src: "https://i.imgur.com/LF9OqNR.png",
-        title: "Login Screen",
+        title: "Landing Page",
         
       },
       {
         src: "https://i.imgur.com/ACPl3j9.png",
-        title: "Landing Page, custom & standard reporting, overview tab",
+        title: "Landing Page, with validation",
         
       },
       {
         src: "https://i.imgur.com/uFlptgK.png",
-        title: "Creating a custom report",
+        title: "Hostname Search",
         
       },
       {
@@ -175,102 +269,6 @@ var projects =  [
     ]
   },
 ];
-
-
-  var experience = [
-  {
-    companyName: 'Norfolk Southern',
-    title: "PC/LAN Administrator",
-    startDate: "March 2013",
-    endDate: "Current",
-    experience: [
-      "Break/fix resolution and prevention, deployments, upgrades, malware resolution, network connectivity and general repair on PCs, Printers, and Mobile Devices ",
-      "Wrote a large repository of scripts using PowerShell, Batch and Visual Basic spanning silent installs and system management to a full restructure and automation of our Wake-on-LAN system",
-      "Created on demand utlitites and tools using C# and WPF ",
-      "Designed, programmed and deployed an asset management system on RHEL6 using a PHP front-end and RESTful API pointed to a MySQL RDBMS as a full stack developer",
-      "Researched and led a project for a department wide knowledge base transition from MediaWiki to SharePoint 2013",
-      "Created internal documentation on software, hardware and processes on a team and department level"
-    ]
-  }, {
-    companyName: 'Wandering WiFi',
-    title: "Telecommunications Manager",
-    startDate: "January 2012",
-    endDate: "March 2013",
-    experience: [
-      "Led team that procured and managed telecom accounts totaling $4 Million annually across DSL, Cable, T1, WISP, WiMAX and Cellular providers ",
-      "Created comprehensive process documentation ",
-      "Designed internal metrics and streamlined processes to eliminate lost income",
-      "Renegotiated contracts, saving 20% on average",
-    ]
-  }, {
-    companyName: 'Wandering WiFi',
-    title: "Technical Account Manager",
-    startDate: "September 2008",
-    endDate: "March 2013",
-    experience: [
-      "Managed and trained a rotating team of five to oversee 1,000+ locations with an annual revenue of $7 Million and a monthly user base of 540,000",
-      "Conducted three new client rollouts totaling $2.5 Million in capital over 600 locations that involved the installation of WLAN/LAN networks, marketing design and managing third party resources",
-      "Led a migration project for a Cisco T1 telecom solution at 220 locations ",
-      "Cultivated corporate client relationships by continually meeting and exceeding expectations",
-      "Engineered initiatives that restructured technical support roles, training, hiring processes and client communication",
-      "Wrote technical and support documentation on hardware, troubleshooting and process improvement",
-      "Researched and led a project to migrate DNS content filtering from an internal server to an external solution; increasing customer satisfaction by 90%",
-    ]
-  }, {
-    companyName: 'Wandering WiFi',
-    title: "Technical Support",
-    startDate: "March 2008",
-    endDate: "Septermber 2008",
-    experience: [
-      "Resolved customer issues by phone and email",
-      "Handled a daily average of 40 inbound support tickets",
-      "Performed remote and onsite break/fix operations",
-      "Installed WLAN/LAN networks for Hotels, Restaurants, Travel Centers",
-      "Consistently awarded for performance",
-    ]
-  }, {
-    companyName: 'Innovative Computers',
-    title: "IT Analyst",
-    startDate: "June 2006",
-    endDate: "January 2008",
-    experience: [
-      "Web development using PHP, JavaScript and HTML",
-      "Managed Windows Server infrastructure",
-      "Built, imaged and maintained desktops and laptops ",
-      "Consulted for local businesses with world-wide locations on user and server side technical support issues by phone, email, and on location ",
-      "Installed voice, data and security networks ",
-      "Initiated projects within the company for process improvement such as a ticket-based support system",
-    ]
-  }];
-
-
- var schools = [{
-    name: 'Washtenaw Community College',
-    degree: "Applied Science",
-    startDate: 8,
-    endDate: 110.50,
-    status: "Transfer"
-  }];
-
-
-
-  var github = [{
-    title: 'rpunnett_resume',
-    description: "This Resume, built using AngularJS and Sass",
-    technology: ["JavaScript","CSS"],
-    url: "https://github.com/rpunnett/rpunnett_resume",
-  }, {
-    title: 'extract_imgur',
-    description: " A lightweight class to extract image links from imgur URLS in PHP",
-    technology: ["PHP"],
-    url: "https://github.com/rpunnett/extract_imgur",
-  }, {
-    title: 'basic_linux_kernel',
-    description: "A small linux kernel that prints a string to console.",
-    technology: ["Assembly","C","Shell"],
-    url: "https://github.com/rpunnett/basic_linux_kernel",
-  }];
-
 
 app.directive('newWindow', function() {
   return {
@@ -285,14 +283,12 @@ app.directive('fancyBox', function() {
   return {
       restrict: 'A',
       link: function(scope, element, attrs) {
-        // In projects, if the title
-        // matches the selected project
-        // use the image set as the items for magnific
+     
         projects.forEach(function(project) {
-          if(project.title === attrs.projectTitle)
+          if(project.title === attrs.projectTitle) // In projects, if the title matches the selected project
           {
             $(element).magnificPopup({
-                items: project.images,
+                items: project.images, // use the image set as the items for magnific
                 gallery: {
                  enabled:true,
                     preload: [1,2],
