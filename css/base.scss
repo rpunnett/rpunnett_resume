@@ -1,126 +1,76 @@
 
-$title-font:    'Open Sans',sans-serif;
-
-
-%vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
+$title-font: 'Open Sans',sans-serif;
 
 body {
     font-family: $title-font;
     padding-top: 10px;
 }
 
-.title {
-    margin-bottom: 10px;
-    margin-top: 15px;
 
-    .name {
-    margin-top: 30px;
+.name{
+    margin-top: 20px; 
     font-size: 3em;
     font-weight: 700;
-    line-height: 22px;
-    }
+    line-height: 40px;
+}
 
-    .location {
-        font-size: 1.7em;
-    }
-
+.location {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 
-
-
-#availability,#contact,#lang,#projects,#skills {
+#contact,#projects,#skills {
     padding-bottom: 30px;
+
 }
 
 
-#address {
-    padding-bottom: 5px;
-    padding-top: 20px;
+#contact {
+    margin-top: 30px;
 }
 
 .job {
     padding-bottom: 20px;
     padding-top: 10px;
-
-    .job-desc {
-    font-size: 15px;
-    padding-top: 1px;
-    }
-
 }
 
+.job-desc {
+    font-size: 15px;
+    padding-top: 1px;
+}
 
 #skills {
     font-size: 14px;
-
-    .skill-list {
-        font-size: 14px;
-        padding-bottom: 15px;
-    }
-
 }
 
-.subText {
-    color:#999;
-}
-
-/*
-#lang,#license p {
+.skill-list {
     font-size: 14px;
+    padding-bottom: 15px;
 }
-*/
 
-.edu {
+
+.education {
     padding-bottom: 12px;
 }
 
-#availability p {
-    font-size: 14px;
-}
+ 
 
-.tools span.label {
-    line-height: 3;
-}
-
-.cat {
+.catagory {
     padding-bottom: 9px;
     margin: 25px 0 10px;
     border-bottom: 1px solid #eee;
 }
 
-.about-me {
-    padding-bottom: 0;
-}
 
-.cat-side {
+.catagory-side {
     padding-bottom: 9px;
     margin: 5px 0 20px;
     border-bottom: 1px solid #eee;
 }
 
-.first-cat {
-    padding-bottom: 9px;
-    margin: 22px 0 20px;
-    border-bottom: 1px solid #eee;
-}
 
-#footer {
-    margin: 40px 0 20px;
-    vertical-align: text-bottom;
-}
-
-
-/****************************************
-For 769px Width
-****************************************/
 @media(min-width:769px) {
     body {
         padding-top: 20px;
@@ -132,7 +82,7 @@ For 769px Width
         line-height: 30px;
     }
 
-    .titolo {
+    .location {
         font-size: 1em;
     };
 }
@@ -163,11 +113,6 @@ For 769px Width
         width: 50%;
     }
 
-    .me {
-        margin-bottom: 10px!important;
-        margin-top: 15px!important;
-    }
-
     .name {
         margin-top: 28px!important;
         font-size: 2.2em!important;
@@ -175,7 +120,7 @@ For 769px Width
         line-height: 16px!important;
     }
 
-    .title {
+    .location {
         font-size: 1.1em!important;
     }
 
@@ -197,10 +142,6 @@ For 769px Width
 
     .spazio2 {
         height: 55px;
-    }
-
-    #footer {
-        margin-top: 100px;
     }
 
     .no-print {

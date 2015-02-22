@@ -2,89 +2,61 @@ body {
   font-family: "Open Sans", sans-serif;
   padding-top: 10px; }
 
-.title {
-  margin-bottom: 10px;
-  margin-top: 15px; }
-  .title .name {
-    margin-top: 30px;
-    font-size: 3em;
-    font-weight: 700;
-    line-height: 22px; }
-  .title .location {
-    font-size: 1.5em; }
+.name {
+  margin-top: 20px;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 40px; }
 
-#availability, #contact, #lang, #projects, #skills {
+.location {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+#contact, #projects, #skills {
   padding-bottom: 30px; }
 
-#address {
-  padding-bottom: 5px;
-  padding-top: 20px; }
+#contact {
+  margin-top: 30px; }
 
 .job {
   padding-bottom: 20px;
   padding-top: 10px; }
-  .job .job-desc {
-    font-size: 15px;
-    padding-top: 1px; }
+
+.job-desc {
+  font-size: 15px;
+  padding-top: 1px; }
 
 #skills {
   font-size: 14px; }
-  #skills .skill-list {
-    font-size: 14px;
-    padding-bottom: 15px; }
 
-.subText {
-  color: #999; }
+.skill-list {
+  font-size: 14px;
+  padding-bottom: 15px; }
 
-/*
-#lang,#license p {
-    font-size: 14px;
-}
-*/
-.edu {
+.education {
   padding-bottom: 12px; }
 
-#availability p {
-  font-size: 14px; }
-
-.tools span.label {
-  line-height: 3; }
-
-.cat {
+.catagory {
   padding-bottom: 9px;
   margin: 25px 0 10px;
   border-bottom: 1px solid #eee; }
 
-.about-me {
-  padding-bottom: 0; }
-
-.cat-side {
+.catagory-side {
   padding-bottom: 9px;
   margin: 5px 0 20px;
   border-bottom: 1px solid #eee; }
 
-.first-cat {
-  padding-bottom: 9px;
-  margin: 22px 0 20px;
-  border-bottom: 1px solid #eee; }
-
-#footer {
-  margin: 40px 0 20px;
-  vertical-align: text-bottom; }
-
-/****************************************
-For 769px Width
-****************************************/
 @media (min-width: 769px) {
   body {
     padding-top: 20px; }
 
-  .mattia {
+  .name {
     font-size: 2.3em;
     font-weight: 700;
     line-height: 30px; }
 
-  .titolo {
+  .location {
     font-size: 1em; } }
 @media print {
   body {
@@ -107,17 +79,13 @@ For 769px Width
   .col-md-4, .col-md-8 {
     width: 50%; }
 
-  .me {
-    margin-bottom: 10px !important;
-    margin-top: 15px !important; }
-
-  .mattia {
+  .name {
     margin-top: 28px !important;
     font-size: 2.2em !important;
     font-weight: 700 !important;
     line-height: 16px !important; }
 
-  .titolo {
+  .location {
     font-size: 1.1em !important; }
 
   .text-muted {
@@ -134,9 +102,6 @@ For 769px Width
 
   .spazio2 {
     height: 55px; }
-
-  #footer {
-    margin-top: 100px; }
 
   .no-print {
     display: none; } }
