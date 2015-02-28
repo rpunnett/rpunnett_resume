@@ -14,7 +14,7 @@ body {
   margin-bottom: 20px; }
 
 #contact, #projects, #skills {
-  padding-bottom: 30px; }
+  padding-bottom: 20px; }
 
 #contact {
   margin-top: 30px; }
@@ -29,13 +29,11 @@ body {
 
 #skills {
   font-size: 14px; }
+  #skills .skill-list {
+    padding-bottom: 20px; }
 
-.skill-list {
-  font-size: 14px;
-  padding-bottom: 15px; }
-
-.education {
-  padding-bottom: 12px; }
+.edu {
+  padding-bottom: 20px; }
 
 .catagory {
   padding-bottom: 9px;
@@ -96,12 +94,6 @@ body {
 
   u {
     text-decoration: none; }
-
-  .spazio1 {
-    height: 725px; }
-
-  .spazio2 {
-    height: 55px; }
 
   .no-print {
     display: none; } }

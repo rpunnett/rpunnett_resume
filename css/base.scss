@@ -1,6 +1,15 @@
 
 $title-font: 'Open Sans',sans-serif;
 
+$section-padding-bottom: 20px;
+
+@mixin build-catagory($margin) {
+    padding-bottom: 9px;
+    margin: $margin;
+    border-bottom: 1px solid #eee;
+}
+
+
 body {
     font-family: $title-font;
     padding-top: 10px;
@@ -22,7 +31,7 @@ body {
 
 
 #contact,#projects,#skills {
-    padding-bottom: 30px;
+    padding-bottom: $section-padding-bottom;
 
 }
 
@@ -43,108 +52,25 @@ body {
 
 #skills {
     font-size: 14px;
+
+    .skill-list {
+        padding-bottom: $section-padding-bottom;
+    }
+
 }
 
-.skill-list {
-    font-size: 14px;
-    padding-bottom: 15px;
-}
 
 
-.education {
-    padding-bottom: 12px;
+.edu {
+    padding-bottom: $section-padding-bottom;
 }
 
  
 
-.catagory {
-    padding-bottom: 9px;
-    margin: 25px 0 10px;
-    border-bottom: 1px solid #eee;
-}
+.catagory { @include build-catagory(25px 0 10px); }
 
+.catagory-side  { @include build-catagory(5px 0 20px); }
 
-.catagory-side {
-    padding-bottom: 9px;
-    margin: 5px 0 20px;
-    border-bottom: 1px solid #eee;
-}
+@import 'small';
 
-
-@media(min-width:769px) {
-    body {
-        padding-top: 20px;
-    }
-
-    .name {
-        font-size: 2.3em;
-        font-weight: 700;
-        line-height: 30px;
-    }
-
-    .location {
-        font-size: 1em;
-    };
-}
-
-@media print {
-    body {
-        width: 1050px!important;
-        margin-top: 0!important;
-    }
-
-    div[class|=col-] {
-        float: left!important;
-    }
-
-    .col-md-3 {
-        width: 33%!important;
-        padding: 0!important;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    .col-md-9 {
-        width: 66%!important;
-        display: inline-block;
-    }
-
-    .col-md-4,.col-md-8 {
-        width: 50%;
-    }
-
-    .name {
-        margin-top: 28px!important;
-        font-size: 2.2em!important;
-        font-weight: 700!important;
-        line-height: 16px!important;
-    }
-
-    .location {
-        font-size: 1.1em!important;
-    }
-
-    .text-muted {
-        color: #999;
-    }
-
-    small {
-        font-size: 80%;
-    }
-
-    u {
-        text-decoration: none;
-    }
-
-    .spazio1 {
-        height: 725px;
-    }
-
-    .spazio2 {
-        height: 55px;
-    }
-
-    .no-print {
-        display: none;
-    };
-}
+@import 'print';
